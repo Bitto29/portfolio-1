@@ -1,0 +1,166 @@
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 7px;
+    border: 3px solid  #2964d9;
+    height: 100%;
+    width: 85%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    box-shadow: 0px 0px 30px 17px rgb(49, 104, 145);  
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    gap: 7%;
+    margin-top: 45px;
+}
+
+.profile-pic{
+    border: 7px solid rgb(49, 104, 145);
+    box-shadow: 0px 0px 10px 1px rgb(49, 104, 145);   ;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    text-align: center;
+    object-fit: cover;
+  }
+
+@media( max-width:515px){
+  .profile-pic{
+      height: 150px;
+      width: 150px;
+}
+}
+
+@media( max-width:430px){
+  .profile-pic{
+      height: 120px;
+      width: 120px;
+      margin-top: -30px;
+  }
+}
+
+.description{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 5px;
+    height: min-content;
+    display: inline-block;
+    width: 45%;
+    text-align: center;
+  }
+
+.description-p{
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+}
+
+@media( max-width:515px){
+  .description-p{
+    font-size: 13px;  }
+}
+
+@media( max-width:430px){
+  .description-p{
+      font-size: 13px;  }
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    gap: 7%;
+}
+
+.icons{
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.fa-square-facebook{
+    font-size: 25px;
+    margin-top:3px ;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-bottom: 7px;
+    cursor: pointer;
+    color: white;
+  }
+
+  .fa-linkedin{
+    font-size: 25px;
+    margin-top:3px ;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-bottom: 7px;
+    cursor: pointer;
+    color: white;
+  }
+
+ 
+  .fa-discord{
+    font-size: 22px;
+    margin-top:3px ;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-bottom: 9px;
+    cursor: pointer;
+    color: white;
+  }
+
+  .fa-github{
+    font-size: 23px;
+    margin-top:3px ;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-bottom: 9px;
+    cursor: pointer;
+    color: white;
+  }
+
+  @media( max-width:515px){
+    .fa-square-facebook, .fa-linkedin, .fa-discord, .fa-github{
+      font-size: 17px;
+    }
+  }
+
+  .button-a{
+    color: transparent;
+  }
+
+    button { cursor: pointer; padding: 0.75rem 1.5rem; font-size: 1rem; appearance: none; border: 0; background: 0; position: relative; color: white; border-radius: 0.5rem; overflow: hidden; font-weight: 500; }
+    button:after { content: ''; position: absolute; inset: 0; box-shadow: inset 0 0 0 2px #ffffff; border-radius: inherit; mix-blend-mode: overlay; } 
+    button iframe { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%) scale(1) rotate(15deg); opacity: 0.5; filter: blur(5px); transition: all 0.5s ease-in-out; }
+    button span { position: relative; z-index: 1; opacity: 0.75; color: white; transition: all 0.5s ease-in-out; }
+    button:hover iframe { transform: translate(-50%, -50%) scale(0.5); opacity: 1; filter: blur(0); }
+    button:hover span { opacity: 1; }
+
+    @media( max-width:430px){
+      button{
+          padding: .5rem 1rem;
+          font-size: 0.85rem;
+      }
+      }
