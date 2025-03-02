@@ -42,5 +42,15 @@
     </div>
   </div>
 </body>
+  <script>
+    // Wait until the DOM is fully loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      // Use a regular expression to check for mobile user agents
+      if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+        // Display a message only for mobile devices
+        alert("For the best experience browse from desktop");
+      }
+    });
+  </script>
 <script src="https://kit.fontawesome.com/ac0f01ecf8.js" crossorigin="anonymous"></script>
 </html>
